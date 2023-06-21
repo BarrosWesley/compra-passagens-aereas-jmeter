@@ -5,7 +5,7 @@
       <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
-      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -97,6 +97,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
+<<<<<<< HEAD
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Configuração dos dados CSV" enabled="true">
         <stringProp name="TestPlan.comments">dados CSV</stringProp>
         <stringProp name="delimiter">,</stringProp>
@@ -110,13 +111,21 @@
         <stringProp name="variableNames">blazeURL,departureCity,destinationCity</stringProp>
       </CSVDataSet>
       <hashTree/>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
+<<<<<<< HEAD
           <stringProp name="LoopController.loops">20</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">3</stringProp>
+=======
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
@@ -129,7 +138,11 @@
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="choose destination" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/reserve.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="fromPort" elementType="HTTPArgument">
@@ -170,22 +183,36 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Choose this flight" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/reserve.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
+<<<<<<< HEAD
                   <stringProp name="Argument.value">${departureCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+                  <stringProp name="Argument.value">Boston</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
+<<<<<<< HEAD
                   <stringProp name="Argument.value">${destinationCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+                  <stringProp name="Argument.value">Rome</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -240,7 +267,11 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="purchase" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/purchase.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="flight" elementType="HTTPArgument">
@@ -248,35 +279,50 @@
                   <stringProp name="Argument.name">flight</stringProp>
                   <stringProp name="Argument.value">43</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
                   <stringProp name="Argument.value">Boston</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="price" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">price</stringProp>
                   <stringProp name="Argument.value">472.56</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
                   <stringProp name="Argument.value">Rome</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="airline" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">airline</stringProp>
                   <stringProp name="Argument.value">Virgin America</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -302,7 +348,11 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="purchase" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/purchase.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="flight" elementType="HTTPArgument">
@@ -310,35 +360,50 @@
                   <stringProp name="Argument.name">flight</stringProp>
                   <stringProp name="Argument.value">43</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
                   <stringProp name="Argument.value">Boston</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="price" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">price</stringProp>
                   <stringProp name="Argument.value">472.56</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
                   <stringProp name="Argument.value">Rome</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
                 <elementProp name="airline" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">airline</stringProp>
                   <stringProp name="Argument.value">Virgin America</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+<<<<<<< HEAD
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -393,7 +458,11 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="fill out form" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/confirmation.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="zipCode" elementType="HTTPArgument">
@@ -490,14 +559,22 @@
             <stringProp name="HTTPSampler.response_timeout">2000</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+<<<<<<< HEAD
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+=======
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
               <stringProp name="RandomTimer.range">66420.0</stringProp>
               <stringProp name="ConstantTimer.delay">33210</stringProp>
               <stringProp name="TestPlan.comments">Recorded time was 66420 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+<<<<<<< HEAD
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="confirmation" enabled="true">
+=======
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.blazedemo.com/confirmation.php" enabled="true">
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="zipCode" elementType="HTTPArgument">
@@ -629,6 +706,7 @@
               <stringProp name="TestPlan.comments">Recorded time was 4 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
+<<<<<<< HEAD
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Asserções de Resposta" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2037238721">Thank you for your purchase today</stringProp>
@@ -639,6 +717,8 @@
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
+=======
+>>>>>>> 546db6b9373761a2d384516688b5e8562b73652a
           </hashTree>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
